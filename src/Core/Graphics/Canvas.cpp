@@ -48,7 +48,7 @@ namespace obe::Graphics::Canvas
     {
     }
 
-    void CanvasElement::setLayer(const unsigned int layer)
+    void CanvasElement::setLayer(const int layer)
     {
         if (this->layer != layer)
         {

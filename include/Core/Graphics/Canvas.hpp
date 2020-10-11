@@ -47,7 +47,7 @@ namespace obe::Graphics::Canvas
          * \nobind
          */
         Canvas& parent;
-        unsigned int layer = 1;
+        int layer = 1;
         bool visible = true;
         CanvasElementType type = CanvasElementType::CanvasElement;
 
@@ -68,7 +68,7 @@ namespace obe::Graphics::Canvas
          * \brief Change layer or object and will ask the Canvas to reorder
          *        elements automatically
          */
-        void setLayer(unsigned int layer);
+        void setLayer(const int layer);
 
         using Ptr = std::unique_ptr<CanvasElement>;
     };
